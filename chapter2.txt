@@ -1,0 +1,47 @@
+cd desktop
+mkdir story
+notepad chapter1.txt
+git init 
+git status 
+git add chapter1.txt
+git commit 
+		Initial commit of chapter1.txt
+			:wq enter
+
+git diff chapter1.txt
+git checkout chapter1.txt
+
+
+git remote add origin link
+git branch -M main
+git push -u origin main
+
+
+echo. > .gitignore --- create gitignore
+dir /a  --- show hidden files 
+
+
+git rm --cached -r   //--- remove all the files from staging area 
+
+
+in git-ignore write the name of files that we dont want to commit 
+		*txt -- for all the text files 
+
+
+
+git branch alien-plot // branching and merging 
+git branch // to see all the branches 
+		* in branches show the current branch 
+
+git checkout alien-plot // to change current branch 
+
+	to commit in new branch 
+		git add chapter1.txt
+		git commit 
+		Initial commit of chapter1.txt
+			:wq enter
+
+git checkout main //go to main branch 
+git merge alien-plot
+	:q enter in vim
+
